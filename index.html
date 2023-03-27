@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* css reset */
+    body{
+        font-family: initial;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        height: 3799px;
+        
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red; */
+        position:absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .mid{
+        display: block;
+        width: 35%;
+        margin: 49px auto;
+        /* border: 2px solid rgb(30, 158, 66); */
+        
+    }
+    .right{
+        position: absolute;
+        right: 46px;
+        top: 39px;
+        display: inline-block;
+        /* border: 2px solid rgb(186, 220, 34); */
+    }
+    .left img{
+        width: 117px;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+        font-size: 20px;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 24px 23px;
+        font-size: 23px;
+    }
+    .navbar li a:hover{
+        color: grey;
+        text-decoration: underline;
+    }
+    .btn{
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 8px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 23px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        color: grey;
+    }
+    .container{
+        border: 8px solid white;
+    margin: 156px 73px;
+    padding: 54px 65px;
+    width: 29%;
+    border-radius: 24px;
+    }
+    .form-group input{
+        text-align: center;
+    border: 2px solid black;
+    width: 431px;
+    padding: 18px;
+    display: block;
+    margin: 6px auto;
+    border-radius: 22px;
+    font-size: 26px;
+    }
+    .container h3{
+        text-align: center;
+        font-size: 30px;
+    }
+    .container button{
+        display: block;
+    width: 67%;
+    margin: 38px auto;
+    font-size: 36px;
+    }
+    .footbox{
+        border: 8px solid white;
+    display: inline-block;
+    margin: 9px 103px;
+    padding: 2px 36px;
+    position: absolute;
+    right: 25px;
+    top: 217px;
+    border-radius: 41px;
+}
+    .footbox h3{
+        text-align: center;
+        font-size: 35px;
+    }
+
+.footer {
+    /* display: inline-block; */
+    border: 3px solid white;
+    width: 127px;
+    margin: 22px 18px;
+    padding: 20px 33px;
+    font-size: 25px;
+    border-radius: 56px;
+}
+    .footer a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        color: grey;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left is for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="" id="">
+            <div>SHIV FITNESS</div>
+        </div>
+        <!-- mid is for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">FITNESS CALCULATOR</a></li>
+                <li><a href="#">CONTACT US</a></li>
+            </ul>
+        </div>
+        <!-- right is for buttons -->
+        <div class="right">
+            <button class="btn">CALL US NOW</button>
+            <button class="btn">EMAIL US</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best GYM of Lucknow now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="enter your contact number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="footbox">
+        <h3>Our Services</h3>
+        <div class="footer">
+            <a href="#">Free Consultation</a>
+        </div>
+        <div class="footer">
+            <a href="#">Work Programs</a>
+        </div>
+        <div class="footer">
+            <a href="#">Workout Plans</a>
+        </div>
+        <div class="footer">
+            <a href="#">Paid Training</a>
+        </div>
+    </div>
+</body>
+</html>
